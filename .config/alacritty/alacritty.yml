@@ -1,0 +1,42 @@
+font:
+  normal:
+    family: Fira Code
+    style: Medium
+  bold:
+    family: Fira Code
+    style: Bold
+  italic:
+    family: Fira Code
+    style: Italic
+  bold_italic:
+      family: Fira Code
+      style: Bold Italic
+  size: 10
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#1d2021'
+    foreground: '#d5cbbb'
+    
+  # Normal Colors
+  normal:
+    black:   '#1d1f21'
+    red:     '#913535'
+    green:   '#8b9626'
+    yellow:  '#e0c150'
+    blue:    '#4d7ba2'
+    magenta: '#835c90'
+    cyan:    '#1e9791'
+    white:   '#6a747e'
+
+  # Bright Colors
+  bright:
+    black:   '#423e3c'
+    red:     '#ba4a4a'
+    green:   '#b1bb49'
+    yellow:  '#e8e75f'
+    blue:    '#81a2be'
+    magenta: '#ab83b8'
+    cyan:    '#76b7b3'
+    white:   '#d5cbbb'
