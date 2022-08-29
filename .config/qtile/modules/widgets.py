@@ -11,10 +11,10 @@ home = os.path.expanduser("~")
 
 # Default Settings for the Groups
 group_box_settings = {
-    "active": colors[10],
-    "block_highlight_text_color": colors[10],
-    "this_current_screen_border": colors[10],
-    "this_screen_border": colors[10],
+    "active": colors[5],
+    "block_highlight_text_color": colors[5],
+    "this_current_screen_border": colors[5],
+    "this_screen_border": colors[5],
     "urgent_border": colors[2],
     "background": colors[0], 
     "other_current_screen_border": colors[0],
@@ -62,7 +62,7 @@ def separator():
 
 #Default Widget Decoration
 base_decor = {
-    "color": colors[1],
+    "color": colors[0],
     "filled": True,
     "padding_y": 4,
     "line_width": 0,
@@ -104,7 +104,7 @@ def _right_decor(color):
 
 # Menu Icon
 launcher_icon = widget.Image(
-    background=colors[9],
+    background=colors[5],
     margin_x=14,
     margin_y=3,
     filename="~/.config/qtile/icons/hkskull.png",
@@ -185,12 +185,12 @@ w_systray = widget.Systray(
 
 # Layout Indicator
 def gen_current_layout():
-    color = colors[10]
+    color = colors[3]
 
     return (
         widget.TextBox(
             text="",
-            foreground=colors[1],
+            foreground=colors[0],
             font="Font Awesome 6 Free Solid",
             fontsize=15,
             padding=8,
@@ -208,24 +208,22 @@ def gen_current_layout():
 # Volume Indicator
 w_volume_icon = widget.TextBox(
     text="",
-    foreground=colors[1],
+    foreground=colors[0],
     font="Font Awesome 6 Free Solid",
     fontsize=15,
     padding=8,
-    decorations=_left_decor(colors[5]),
+    decorations=_left_decor(colors[4]),
     )
 
 w_volume = widget.PulseVolume(
-    foreground=colors[5],
+    foreground=colors[4],
     imit_max_volume="True",
     padding=8,
-    decorations=_right_decor(colors[5]),
+    decorations=_right_decor(colors[4]),
     )
 
 # Calendar
 def gen_clock():
-    color = colors[9]
-
     return (
         widget.TextBox(
             text="",
@@ -233,14 +231,14 @@ def gen_clock():
             fontsize=16,
             foreground=colors[0],
             padding=8,
-            decorations=_left_decor(color),
+            decorations=_left_decor(colors[6]),
         ),
         separator_sm(),
         widget.Clock(
             format="%b %d, %H:%M",
-            foreground=color,
+            foreground=colors[6],
             padding=8,
-            decorations=_right_decor(color),
+            decorations=_right_decor(colors[6]),
         ),
         separator(),
     )
