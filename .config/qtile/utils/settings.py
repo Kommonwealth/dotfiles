@@ -24,8 +24,8 @@ workspace_names = [
 ]
 
 # Wallpapers
-wallpaper_main = "/home/kommon/.config/qtile/wallpapers/cyberpunk2.jpg"
-wallpaper_sec = "/home/kommon/.config/qtile/wallpapers/cyberpunk2.jpg"
+wallpaper_main = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
+wallpaper_sec = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
 
 # Hardware Settings
 network = "enp8s0" # Network Interface Name
