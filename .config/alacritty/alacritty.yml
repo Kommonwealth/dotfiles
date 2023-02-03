@@ -11,32 +11,32 @@ font:
   bold_italic:
       family: Fira Code
       style: Bold Italic
-  size: 10
+  size: 9
 draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '#1d2021'
-    foreground: '#d5cbbb'
+    background: '#282828'
+    foreground: '#ebdbb2'
     
   # Normal Colors
   normal:
     black:   '#1d1f21'
-    red:     '#913535'
-    green:   '#8b9626'
-    yellow:  '#e0c150'
-    blue:    '#4d7ba2'
-    magenta: '#835c90'
-    cyan:    '#1e9791'
-    white:   '#6a747e'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
 
   # Bright Colors
   bright:
     black:   '#423e3c'
-    red:     '#ba4a4a'
-    green:   '#b1bb49'
-    yellow:  '#e8e75f'
-    blue:    '#81a2be'
-    magenta: '#ab83b8'
-    cyan:    '#76b7b3'
-    white:   '#d5cbbb'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a498'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#fbf1c7'

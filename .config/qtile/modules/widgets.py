@@ -11,9 +11,9 @@ home = os.path.expanduser("~")
 
 # Default Settings for the Groups
 group_box_settings = {
-    "active": colors[5],
+    "active": colors[3],
     "block_highlight_text_color": colors[5],
-    "this_current_screen_border": colors[5],
+    "this_current_screen_border": colors[3],
     "this_screen_border": colors[5],
     "urgent_border": colors[2],
     "background": colors[0], 
@@ -104,10 +104,10 @@ def _right_decor(color):
 
 # Menu Icon
 launcher_icon = widget.Image(
-    background=colors[5],
+    background=colors[3],
     margin_x=14,
     margin_y=3,
-    filename="~/.config/qtile/icons/hkskull.png",
+    filename="~/.config/qtile/icons/homestuck.png",
     )
 
 # Icons for Groups

@@ -4,10 +4,9 @@ from libqtile.lazy import lazy
 import os
 import subprocess
 
-mod = "mod4"
+mod = "mod1"
 control = "control"
 shift = "shift"
-alt = "mod1"
 terminal = "alacritty"
 browser = "firefox"
 
@@ -15,9 +14,11 @@ home = os.path.expanduser('~')
 
 keys = [
     # Spawn Programs
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+  Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
-    Key([mod], "s", lazy.spawn("subl"), desc="Launch sublime"),
+    Key([mod], "s", lazy.spawn("steam"), desc="Launch steam"),
+    Key([mod], "d", lazy.spawn("discord"), desc="Launch discord"),
+    Key([mod], "a", lazy.spawn("anki"), desc="Launch anki"),
     Key([mod], "t", lazy.spawn("thunar"), desc="Launch thunar"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
@@ -51,7 +52,7 @@ keys = [
     Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([mod, alt], "n", lazy.layout.normalize(), desc="Normalize window size ratios"),
+    Key([mod], "n", lazy.layout.normalize(), desc="Normalize window size ratios"),
 
     #Screenshots
     Key([], "Print", lazy.spawn("" + home + "/.local/bin/prtscreen"), desc="Print Screen"),

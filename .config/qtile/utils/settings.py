@@ -1,15 +1,15 @@
 # Custom Palette
 
 colors = [ 
-    ["1d1f21", "1d1f21"], # 0 Black
-    ["2f3436", "2f3436"], # 1 Grey
-    ["d5cbbb", "d5cbbb"], # 2 White
-    ["ba4a4a", "ba4a4a"], # 3 Red
-    ["8ebb49", "8ebb49"], # 4 Green
-    ["e0c150", "e0c150"], # 5 Yellow
-    ["4d7ba2", "4d7ba2"], # 6 Blue
-    ["ab83b8", "ab83b8"], # 7 Magenta
-    ["1e9791", "1e9791"], # 8 Cyan
+    ["282828", "282828"], # 0 Black
+    ["3c3836", "3c3836"], # 1 Grey
+    ["ebdbb2", "ebdbb2"], # 2 White
+    ["cc241d", "cc241d"], # 3 Red
+    ["98971a", "98971a"], # 4 Green
+    ["d79921", "d79921"], # 5 Yellow
+    ["458588", "458588"], # 6 Blue
+    ["b16286", "b16286"], # 7 Magenta
+    ["689d6a", "689d6a"], # 8 Cyan
 ]
 
 # Workspace Names
