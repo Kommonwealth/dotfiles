@@ -222,6 +222,32 @@ w_volume = widget.PulseVolume(
     decorations=_right_decor(colors[4]),
     )
 
+# Battery
+def gen_battery():
+    return (
+        widget.Battery(
+            format='{char}',
+            charge_char='',
+            discharge_char='',
+            full_char='',
+            unknown_char='',
+            empty_char='',
+            foreground=colors[0],
+            fontsize=15,
+            padding=8,
+            decorations=_left_decor(colors[5]),
+            update_interval=5,
+        ),
+        separator_sm(),
+        widget.Battery(
+            format='{percent:2.0%}',
+            foreground=colors[5],
+            padding=8,
+            decorations=_right_decor(colors[0]),
+        ),
+        separator(),
+    )
+
 # Calendar
 def gen_clock():
     return (
