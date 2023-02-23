@@ -29,4 +29,5 @@ wallpaper_sec = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
 
 # Hardware Settings
 network = "enp8s0" # Network Interface Name
+battery = False # If laptop is being used
 two_monitors = False # Number of Used Monitors

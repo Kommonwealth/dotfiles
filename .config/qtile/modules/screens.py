@@ -32,7 +32,7 @@ def create_bar(extra_bar = False):
             separator_sm(),
             w_volume,
             separator(),
-            *gen_battery(),
+            *w_battery,
             *gen_clock(),
             w_power,
         ],

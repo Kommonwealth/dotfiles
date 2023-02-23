@@ -3,7 +3,7 @@ from libqtile import bar, qtile, lazy
 from qtile_extras import widget
 from qtile_extras.widget.decorations import RectDecoration
 
-from utils.settings import colors, workspace_names
+from utils.settings import colors, workspace_names, battery
 
 import os
 
@@ -110,52 +110,12 @@ launcher_icon = widget.Image(
     filename="~/.config/qtile/icons/homestuck.png",
     )
 
-# Icons for Groups
-w_groupbox_1 = widget.GroupBox(  # WEB
-    font="Font Awesome 6 Brands",
-    visible_groups=[workspace_names[0]],
-    **group_box_settings,
-    )
-
-w_groupbox_2 = widget.GroupBox(  # DEV, SYS
-    font="Font Awesome 6 Free Solid",
-    visible_groups=[workspace_names[1], workspace_names[2]],
-    **group_box_settings,
-    ),
-
-w_groupbox_3 = widget.GroupBox(  # DISC, MUS
-    font="Font Awesome 6 Brands",
-    visible_groups=[workspace_names[3], workspace_names[4]],
-    **group_box_settings,
-    ),      
-
-w_groupbox_4 = widget.GroupBox(  # FILE, NOT
-    font="Font Awesome 6 Free Solid",
-    visible_groups=[workspace_names[5], workspace_names[6]],
-    **group_box_settings,
-    ),
-
 # Links Individual w_groupbox widgets
 def gen_groupbox():
     return (
-        widget.GroupBox(  # WEB
-            font="Font Awesome 6 Brands",
-            visible_groups=[workspace_names[0]],
-            **group_box_settings,
-        ),
-        widget.GroupBox(  # DEV, SYS
+        widget.GroupBox(
             font="Font Awesome 6 Free Solid",
-            visible_groups=[workspace_names[1], workspace_names[2]],
-            **group_box_settings,
-        ),
-        widget.GroupBox(  # DISC, MUS
-            font="Font Awesome 6 Brands",
-            visible_groups=[workspace_names[3], workspace_names[4]],
-            **group_box_settings,
-        ),
-        widget.GroupBox(  # FILE, NOT
-            font="Font Awesome 6 Free Solid",
-            visible_groups=[workspace_names[5], workspace_names[6]],
+            visible_groups=workspace_names,
             **group_box_settings,
         ),
     )
@@ -223,8 +183,8 @@ w_volume = widget.PulseVolume(
     )
 
 # Battery
-def gen_battery():
-    return (
+w_battery = (
+    (
         widget.Battery(
             format='{char}',
             charge_char='',
@@ -247,7 +207,9 @@ def gen_battery():
         ),
         separator(),
     )
-
+    if battery
+    else ()
+)
 # Calendar
 def gen_clock():
     return (
