@@ -22,16 +22,20 @@ keys = [
     Key([mod], "t", lazy.spawn("thunar"), desc="Launch thunar"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
-    #Qtiles
+    # Qtiles
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Layouts
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
 
-    #Control Volume
+    # Control Volume
     Key([mod], "g", lazy.spawn("amixer set Master 5%-"), desc='Decrease volume by 5%'),
     Key([mod], "h", lazy.spawn("amixer set Master 5%+"), desc='Increase volume by 5%'),
+    
+    # Control Brightness
+    Key([mod], "f6", lazy.spawn("light -A 10"), desc='Increase brightness by 10%'),
+    Key([mod], "f5", lazy.spawn("light -U 10"), desc='Increase brightness by 10%'),
 
     # Switch Between Windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
