@@ -7,7 +7,7 @@ import subprocess
 mod = "mod1"
 control = "control"
 shift = "shift"
-terminal = "alacritty"
+terminal = "urxvt"
 browser = "firefox"
 
 home = os.path.expanduser('~')
