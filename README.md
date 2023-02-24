@@ -8,9 +8,9 @@ The code is specified for my system, changes will need to be made for it to run 
 
 - OS: Arch Linux 
 - WM: Qtile
-- Terminal: Alacritty
-- Shell: Bash
-- Fonts: JetBrainsMono Nerd Font, Font Awesome 6 Free (Bar Icons), Fira Code
+- Terminal: Urxvt
+- Shell: Fish
+- Fonts: Dina, Font Awesome 6 Free (Bar Icons)
 - File manager: Thunar
-- Editors: Vim, Sublime Text
+- Editors: Neovim
 - Fetch: Neofetch
