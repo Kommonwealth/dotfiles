@@ -20,20 +20,13 @@ def create_bar(extra_bar = False):
     return bar.Bar(
         [
        		launcher_icon,
-       		*gen_groupbox(),
-       		gen_spacer(),
-       		w_window_name_icon,
-            w_window_name,
-            gen_spacer(),
-            *((w_systray,) if not extra_bar else ()),
-            separator(),
-            *gen_current_layout(),
-            w_volume_icon,
-            separator_sm(),
-            w_volume,
-            separator(),
+       		*w_groupbox,
+            *w_window_name,
+            *w_current_layout,
+            *w_temperature,
+            *w_volume,
             *w_battery,
-            *gen_clock(),
+            *w_clock,
             w_power,
         ],
         30,
@@ -66,3 +59,4 @@ if two_monitors:
             right=bar.Gap(2),
         ),
     )
+

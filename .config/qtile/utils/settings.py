@@ -1,4 +1,23 @@
-# Custom Palette
+# General
+bg = "282828"
+fg = "ebdbb2"
+grey = "3c3836"
+
+# Dark
+red = "cc241d"
+green = "98971a"
+yellow = "d79921"
+blue = "458588"
+purple = "b16286"
+cyan = "689d6a"
+
+# Light
+lightred = "fb4934"
+lightgreen = "b8bb26"
+lightyellow = "fabd2f"
+lightblue = "83a598"
+lightpurple = "d3869b"
+lightcyan = "8ec07c"
 
 colors = [ 
     ["282828", "282828"], # 0 Black
