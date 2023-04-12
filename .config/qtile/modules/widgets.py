@@ -29,6 +29,9 @@ group_box_settings = {
     "rounded": False,
 }
 
+def open_launcher():
+    qtile.cmd_spawn('rofi -show drun')
+
 def toggle_maximize():
     lazy.window.toggle_maximize()
 
@@ -96,6 +99,7 @@ launcher_icon = widget.Image(
     margin_x=14,
     margin_y=3,
     filename="~/.config/qtile/icons/homestuck.png",
+    mouse_callbacks={'Button1': open_launcher},
 )
 
 # Window Groups
@@ -215,24 +219,22 @@ w_battery = (
 
 # Calendar
 w_clock = (
-    (
-        widget.TextBox(
-            text="",
-            font="JetBrainsMono Nerd Font",
-            fontsize=16,
-            foreground=bg,
-            padding=8,
-            decorations=icon_decor(lightblue),
-        ),
-        separator_sm(),
-        widget.Clock(
-            format="%b %d, %H:%M",
-            foreground=fg,
-            padding=8,
-            decorations=text_decor(),
-        ),
-        separator(),
-    )
+    widget.TextBox(
+        text="",
+        font="JetBrainsMono Nerd Font",
+        fontsize=16,
+        foreground=bg,
+        padding=8,
+        decorations=icon_decor(lightblue),
+    ),
+    separator_sm(),
+    widget.Clock(
+        format="%b %d, %H:%M",
+        foreground=fg,
+        padding=8,
+        decorations=text_decor(),
+    ),
+    separator(),
 )
 
 # Power Menu
@@ -244,3 +246,24 @@ w_power = widget.TextBox(
     fontsize=18,
     padding=16,
 )
+
+# Updates
+w_updates = (
+    widget.TextBox(
+        text = "",
+        font="JetBrainsMono Nerd Font",
+        fontsize=16,
+        foreground=bg,
+        padding=8,
+        decorations=icon_decor(blue),
+    ),
+    separator_sm(),
+    widget.CheckUpdates(
+        foreground=fg,
+        padding=8,
+        decorations=text_decor(),
+    ),
+    separator(),
+)
+
+# WLAN
