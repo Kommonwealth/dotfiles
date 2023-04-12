@@ -43,7 +43,7 @@ workspace_names = [
 ]
 
 # Wallpapers
-wallpaper_main = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
+wallpaper_main = "~/.config/qtile/wallpapers/albums/machinegirl.jpg"
 wallpaper_sec = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
 
 # Hardware Settings
