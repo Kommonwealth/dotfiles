@@ -7,6 +7,8 @@ from utils.settings import *
 
 import os
 
+home = os.path.expanduser('~')
+
 # Default Settings for the Groups
 group_box_settings = {
     "active": cyan,
@@ -22,7 +24,7 @@ group_box_settings = {
     "foreground": fg,
     "borderwidth": 2,
     "disable_drag": True,
-    "fontsize": 14,
+    "fontsize": 13,
     "highlight_method": "line",
     "padding_x": 10,
     "padding_y": 16,
@@ -31,6 +33,9 @@ group_box_settings = {
 
 def open_launcher():
     qtile.cmd_spawn('rofi -show drun')
+
+#def open_power():
+#    lazy.spawn([home + '/.config/rofi/powermenu/powermenu.sh'])
 
 def toggle_maximize():
     lazy.window.toggle_maximize()
@@ -105,7 +110,7 @@ launcher_icon = widget.Image(
 # Window Groups
 w_groupbox = (
     widget.GroupBox(
-        font="Font Awesome 6 Free Solid",
+        font="Dina TTF",
         visible_groups=workspace_names,
         **group_box_settings,
     ),

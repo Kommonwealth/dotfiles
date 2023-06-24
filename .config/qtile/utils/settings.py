@@ -31,19 +31,30 @@ colors = [
     ["689d6a", "689d6a"], # 8 Cyan
 ]
 
-# Workspace Names
+# Icon Workspace Names
+# workspace_names = [
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+#     "",
+# ]
+
+# Roman Numeral Workspace Names
 workspace_names = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
 ]
 
 # Wallpapers
-wallpaper_main = "~/.config/qtile/wallpapers/albums/machinegirl.jpg"
+wallpaper_main = "~/.config/qtile/wallpapers/gaming/disco-elysium1.jpg"
 wallpaper_sec = "/home/kommon/.config/qtile/wallpapers/astronomy.jpg"
 
 # Hardware Settings
