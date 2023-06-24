@@ -1,0 +1,2 @@
+#!/bin/fish
+fish ~/.config/rofi/powermenu/powermenu.sh
