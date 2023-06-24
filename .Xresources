@@ -39,10 +39,10 @@
 
 
 ! fonts
-*.font: xft:Dina:style=Regular:size=9,xft:Unifont:style=Regular:size=9
-*.boldFont: xft:Dina:style=Bold:size=9,xft:Unifont:style=Bold:size=9
-*.italicFont: xft:Dina:style=Italic:size=9,xft:Unifont:style=Italic:size=9
-*.boldItalicFont: xft:Dina:style=Bold Italic:size=9,xft:Unifont:style=Bold Italic:size=9
+*.font: xft:Dina TTF:style=Regular:size=9,xft:Unifont:style=Regular:size=9
+*.boldFont: xft:Dina TTF:style=Bold:size=9,xft:Unifont:style=Bold:size=9
+*.italicFont: xft:Dina TTF:style=Italic:size=9,xft:Unifont:style=Italic:size=9
+*.boldItalicFont: xft:Dina TTF:style=Bold Italic:size=9,xft:Unifont:style=Bold Italic:size=9
 
 ! assorted settings
 URxvt.scrollBar: false
