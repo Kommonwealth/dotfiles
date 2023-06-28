@@ -1,3 +1,7 @@
-require("autumn")
-vim.o.background = "dark" -- or "light" for light mode 
-vim.cmd([[colorscheme gruvbox]])
+vim.loader.enable()
+
+require("autumn.bootstrap")
+require('autumn.settings')
+require('autumn.plugins')
+require('autumn.keybinds')
+require('autumn.autocmd')
