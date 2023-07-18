@@ -1,24 +1,24 @@
 font:
   normal:
-    family: Dina
+    family: DinaRemaster Nerd Font
     style: Medium
   bold:
-    family: Dina
+    family: DinaRemaster Nerd Font
     style: Bold
   italic:
-    family: Dina
+    family: DinaRemaster Nerd Font
     style: Italic
   bold_italic:
-      family: Dina
-      style: Bold Italic
-  size: 9
+    family: DinaRemaster Nerd Font
+    style: Bold Italic
+  size: 12
 draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
     background: '#282828'
     foreground: '#ebdbb2'
-    
+
   # Normal Colors
   normal:
     black:   '#1d1f21'
@@ -40,3 +40,10 @@ colors:
     magenta: '#d3869b'
     cyan:    '#8ec07c'
     white:   '#fbf1c7'
+
+env:
+  TERM: xterm-256color
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
