@@ -7,6 +7,11 @@ function fish_user_key_bindings
   fish_vi_key_bindings
 end
 
+### INPUT METHOD ###
+set -x GTK_IM_MODULE fcitx
+set -x QT_IM_MODULE fcitx
+set -x XMODIFIERS @im=fcitx
+
 ### ALIASES ###
 
 # confirm before overwriting
