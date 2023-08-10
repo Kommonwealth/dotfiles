@@ -14,6 +14,12 @@ awful.util.spawn_with_shell(
 awful.util.spawn_with_shell(
   "unclutter --hide-on-touch &"
 )
+
+awful.util.spawn_with_shell(
+  "hwclock --localtime --hctosys"
+)
+
+
 -- compositor
 awful.util.spawn_with_shell(
   "picom"

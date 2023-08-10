@@ -143,6 +143,12 @@ screen.connect_signal("request::desktop_decoration", function(s)
         position     = "top",
         height       = (30),
         border_width = (4),
+        margins = {
+            top = 6,
+            left = 6,
+            right = 6,
+            bottom = 0
+        },
         border_color = theme.bg_normal,
         screen       = s,
         widget       = {

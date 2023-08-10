@@ -393,6 +393,22 @@ awful.keyboard.append_global_keybindings(
         group = "Quick keybinds"
     }),
 
+    awful.key({mod, con}, "s",
+        function()
+            awful.spawn("scrot")
+        end, {
+        description = "Take a Full Screen Screenshot",
+        group = "Quick keybinds"
+    }),
+
+    awful.key({mod, con, shi}, "s",
+        function()
+            awful.spawn("scrot -s")
+        end, {
+        description = "Take a Dynamic Screenshot",
+        group = "Quick keybinds"
+    }),
+
     awful.key({mod}, "a",
         function()
             local grabber
